@@ -1,0 +1,54 @@
+{
+  "name": "java-bin",
+  "version": "1.8.65",
+  "description": "Binary wrapper for java",
+  "license": "MIT",
+  "repository": "mastilver/java-bin",
+  "author": {
+    "name": "Thomas Sileghem",
+    "email": "tsileghem@neworbit.co.uk",
+    "url": "mastilver.com"
+  },
+  "bin": {
+    "java": "cli.js"
+  },
+  "scripts": {
+    "test": "npm run postinstall && xo && ava",
+    "postinstall": "node lib/install.js"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "files": [
+    "index.js",
+    "cli.js",
+    "lib"
+  ],
+  "keywords": [
+    "cli-app",
+    "cli",
+    "bin",
+    "binary",
+    "wrapper"
+  ],
+  "dependencies": {
+    "bin-wrapper": "mastilver/bin-wrapper#expose-download-instance",
+    "decompress-tarxz": "git://github.com/mastilver/decompress-tarxz.git/#f07b5cacb0bc194c1eaabfb272bad3b2521e3fd2",
+    "download": "git+https://github.com/mastilver/download.git#add-transform-stream",
+    "logalot": "^2.0.0",
+    "os-filter-obj": "^1.0.3",
+    "path-exists": "^2.1.0",
+    "archive-type": "mastilver/archive-type#patch-1",
+    "file-type": "mastilver/file-type#patch-1"
+  },
+  "devDependencies": {
+    "ava": "*",
+    "bin-check": "^3.0.0",
+    "xo": "*"
+  },
+  "xo": {
+    "ignores": [
+      "test.js"
+    ]
+  }
+}
