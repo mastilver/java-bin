@@ -37,13 +37,13 @@
     "download": "mastilver/download.git#add-transform-stream",
     "logalot": "^2.0.0",
     "os-filter-obj": "^1.0.3",
-    "path-exists": "^2.1.0",
+    "path-exists": "^3.0.0",
     "archive-type": "mastilver/archive-type#patch-1",
     "file-type": "mastilver/file-type#patch-1"
   },
   "devDependencies": {
     "ava": "*",
-    "bin-check": "^3.0.0",
+    "bin-check": "^4.0.1",
     "xo": "*"
   },
   "xo": {
